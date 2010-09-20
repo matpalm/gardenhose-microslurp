@@ -10,7 +10,7 @@ really roll into the script
 1. start a micro instance and ssh on
 
 $ yum install git
-$ git clone this-repo
+$ git clone git://github.com/matpalm/gardenhose-microslurp.git
 $ cp gardenhose-microslurp/* .
 $ ./bootstrap.sh
 
