@@ -1,21 +1,16 @@
-simple set of scripts for slurping twitter gardenhose
-and uploading to s3 daily
+simple set of scripts for slurping twitter gardenhose and uploading to s3 daily
 
-restarts curl from gardenhose hourly to ensure dropped
-connections are reestablished from time to time
+restarts curl from gardenhose hourly to ensure dropped connections are reestablished from time to time
 
-requires a s3 bucket to be created beforehand, should
-really roll into the script
+requires a s3 bucket to be created beforehand (should really roll into the script)
 
-1. start a micro instance and ssh on
-
+start a micro instance and ssh on and run...
 $ yum install git
 $ git clone git://github.com/matpalm/gardenhose-microslurp.git
 $ cp gardenhose-microslurp/* .
 $ ./bootstrap.sh
 
-sets some env vars for twitter uid, s3 creds
+bootstrap sets some env vars for twitter uid, s3 creds and sets up some cron jobs
 
-just extracted the uids/pwds into env vars and
-haven't cloned this from scratch onto a new instance
-yet (ie might have some, errr, "nuances")
+haven't cloned and tested this project from scratch onto a new instance
+(ie might have some, errr, "nuances")
