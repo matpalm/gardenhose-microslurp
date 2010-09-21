@@ -10,7 +10,5 @@ $ git clone git://github.com/matpalm/gardenhose-microslurp.git
 $ cp gardenhose-microslurp/* .
 $ ./bootstrap.sh
 
-bootstrap sets some env vars for twitter uid, s3 creds and sets up some cron jobs
-
-haven't cloned and tested this project from scratch onto a new instance
-(ie might have some, errr, "nuances")
+bootstrap sets some env vars (in ~/env_vars) for twitter uid, 
+s3 creds and sets up some cron jobs
