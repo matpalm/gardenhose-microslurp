@@ -46,13 +46,13 @@ verbosity = WARNING
 EOF
 
 read -p "bucket for storing data? eg s3://matpalm/gardenhose_full/ " s3_bucket
-echo "export S3_BUCKET=$s3_bucket" >> ~/.bashrc
+echo "export S3_BUCKET=$s3_bucket" > ~/env_vars
 
 read -p "twitter username? " twitter_uid
-echo "export TWITTER_UID=$twitter_uid" >> ~/.bashrc
+echo "export TWITTER_UID=$twitter_uid" >> ~/env_vars
 
 read -p "twitter password? " twitter_pwd
-echo "export TWITTER_PWD=$twitter_pwd" >> ~/.bashrc
+echo "export TWITTER_PWD=$twitter_pwd" >> ~/env_vars
 
 crontab - <<EOF
 5 * * * * bash $HOME/start.sh 2>&1 >> $HOME/start.out
